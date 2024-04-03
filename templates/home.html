@@ -1,0 +1,12 @@
+<!-- templates/home.html -->
+{% extends "base.html" %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <h1>Welcome to Our E-Commerce Site</h1>
+    <p>Find the best products here.</p>
+    <a href="{% url 'product_list' %}" class="btn btn-primary">Shop Now</a>
+  </div>
+{% endblock %}
